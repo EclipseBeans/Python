@@ -1,5 +1,7 @@
-#hashtag marks the line as a "human comment" so its not read as code and ignored
-#removing the # will unmark the line to be read in the script
+#hashtag marks the line as a "human comment" so its not read as script and ignored when ran
+#removing the # will unmark the line and be read as script
+#examples are marked # too with the final product left as script
+
 
 #print is a function that tells computer to say something
 #anything that is put between quotations "" is called a string
@@ -17,7 +19,8 @@
 #print("hello world\n" + "hello world\n" + "hello world")
 
 #the separate strings "" are concatenized, or added together, with a plus sign
-#so it tells the computer print, or say, "this" AND "this" AND "this"
+#only STRINGS can be concatenized
+#it tells the computer to print, or say, "this" AND "this" AND "this"
 
 
 #input is for the user to provide an answer/input something- for example, their name
@@ -34,14 +37,19 @@
 
 #print(input("what is your name?\n"))
 
-#the input name will be printed to repeat it back to the user because we telling the computer to say what they input
+#the input name will be printed to repeat it back to the user because we're telling the computer to say what they input
 #lets write a simple back and forth where the computer asks for name and then says hello with their name
 #to do that, we need to set "name" as a variable like so:
 
 #name = input("What is your name?\n")
 
 #setting th variable will /become/ the input prompt AND set the user's answer as the variable we defined- "name"
-#after that, we concatenize, or add, the variable with what we want the computer to say
+#whatever the user inputs becomes a string ""; keep in mind for number responses
+#to check the "class" of something, use type() function
+
+#type(name)
+
+#after defining our variable, we concatenize, or add, the variable with what we want the computer to say
 #this is done with a + sign and since the variable is just the word name, we don't add anything to that
 
 name = input("What is your name?\n")
